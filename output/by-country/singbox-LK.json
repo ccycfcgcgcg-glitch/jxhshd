@@ -5,20 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.151.109",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
+      "server": "trackydev.site",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
+      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
       "tls": {
         "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
-        "insecure": false
+        "server_name": "trackydev.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
+        "path": "/",
         "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
+          "Host": "trackydev.site"
         }
       }
     },
@@ -27,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

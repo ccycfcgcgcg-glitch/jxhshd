@@ -16,21 +16,19 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: 83.143.106.9
-  port: 8443
+  server: 34.165.56.30
+  port: 443
   udp: true
   type: vless
-  uuid: 3f9f2bda-0b9c-8469-7381-a73de2255619
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
   tls: true
   reality-opts:
-    public-key: 4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo
-  servername: res.cdn.office.net
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+    short-id: fffff8acddadcac3
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select

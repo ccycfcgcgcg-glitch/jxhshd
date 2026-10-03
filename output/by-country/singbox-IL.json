@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -27,25 +27,21 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "83.143.106.9",
-      "server_port": 8443,
-      "uuid": "3f9f2bda-0b9c-8469-7381-a73de2255619",
+      "server": "34.165.56.30",
+      "server_port": 443,
+      "uuid": "0c40bce9-8710-4820-8f22-0742b61df999",
       "tls": {
         "enabled": true,
-        "server_name": "res.cdn.office.net",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo",
-          "short_id": ""
+          "public_key": "AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc",
+          "short_id": "fffff8acddadcac3"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
       }
     },
     {
