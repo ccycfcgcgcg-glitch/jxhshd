@@ -63,6 +63,7 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
+    "https://www.v2nodes.com/subscriptions/country/all/?key=0F2D65CB53EE9DB",
 ]
 
 OUTPUT_DIR = "output"
