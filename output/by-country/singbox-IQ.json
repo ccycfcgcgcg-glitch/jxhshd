@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.67.140.37",
+      "server": "188.114.96.8",
       "server_port": 443,
-      "uuid": "527451fe-ee1f-4e6f-94ca-808f055f7c9b",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev",
+        "server_name": "y9p34jpjmqjazaypf.piiwddilxjcqehr17af22u7xk-yu.workers.dev",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,9 +23,32 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/ERYN0G44hia16zhR",
+        "path": "/tr/1nWXnOaq1ajP7PKxbRS7Sdck48oy?ed=2560",
         "headers": {
-          "Host": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev"
+          "Host": "y9p34jpjmqjazaypf.piiwddilxjcqehr17af22u7xk-yu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02 - xiaohe",
+      "server": "172.64.153.235",
+      "server_port": 8443,
+      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "tls": {
+        "enabled": true,
+        "server_name": "socks5.revil-time3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/socks5://128.140.46.169:13482",
+        "headers": {
+          "Host": "socks5.revil-time3.workers.dev"
         }
       }
     },
@@ -34,14 +57,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe",
+        "🇮🇶 IQ 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe",
+        "🇮🇶 IQ 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
