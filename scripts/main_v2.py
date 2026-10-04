@@ -64,6 +64,9 @@ SOURCE_URLS = [
     "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://www.v2nodes.com/subscriptions/country/all/?key=0F2D65CB53EE9DB",
+    "https://jikun.zmxoo.xyz/linkapi?token=free_M8nP4qR7sT1vW3x&placeholder=1&placeholder=2&placeholder=3",
+    "https://www.v2nodes.com/subscriptions/country/kr/?key=0F2D65CB53EE9DB",
+    "https://www.v2nodes.com/subscriptions/country/tw/?key=0F2D65CB53EE9DB",
 ]
 
 OUTPUT_DIR = "output"
