@@ -12,27 +12,12 @@
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "170.168.4.59",
-      "server_port": 17170,
-      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
-      "tls": {
-        "enabled": true,
-        "server_name": "northerntrail.gazette.help",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "trail-grpc"
-      }
+      "server": "185.103.110.66",
+      "server_port": 18280,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
       "type": "hysteria2",
@@ -73,27 +58,24 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-      "server": "65.109.188.155",
-      "server_port": 443,
-      "uuid": "a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7",
+      "server": "170.168.4.59",
+      "server_port": 17170,
+      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
       "tls": {
         "enabled": true,
-        "server_name": "marz.zovip2.ir",
+        "server_name": "northerntrail.gazette.help",
         "insecure": false,
         "alpn": [
-          "http/1.1"
+          "h2"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/gropcdn",
-        "headers": {
-          "Host": "marz.zovip2.ir"
-        }
+        "type": "grpc",
+        "service_name": "trail-grpc"
       }
     },
     {
