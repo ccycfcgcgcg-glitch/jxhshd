@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
-  server: freede.aiage.work
+  server: 213.165.56.102
   port: 443
   udp: true
   type: vless
@@ -16,7 +16,7 @@ proxies:
     public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
     short-id: 57e7977c9011061c
   servername: freede.aiage.work
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
