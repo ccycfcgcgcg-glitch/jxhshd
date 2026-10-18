@@ -10,52 +10,30 @@ proxies:
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  server: 104.21.78.9
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  server: 183.109.131.75
+  port: 20086
   udp: true
-  type: trojan
-  password: 5ffee9b2-4514-4719-97b3-67810ece038d
-  sni: ali-panel-1.terhav.workers.dev
-  skip-cert-verify: false
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vertex
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  server: game.jafarghasemivip.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
-  tls: true
-  servername: game.jafarghasemivip.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
